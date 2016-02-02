@@ -1,0 +1,186 @@
+/*General Style */
+body {
+	background-image: url(../graphics/singletile.jpg);
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	  width: 100%;
+	  height: 52%;
+}
+h1 { 
+	font: bold 80px/60px Helvetica, Arial, Sans-serif; 
+	text-align: center; 
+	color: #48FFF6; 
+	text-shadow: 1px 1px 2px #FFF; 
+	position: relative;
+  	top: 2.8em;	
+}
+h1 small { 
+	font-size: 20px; 
+	text-transform:uppercase; 
+	letter-spacing: 14px; 
+	display: block; 
+	text-align: right;
+	color: #fff; 
+}
+h2 {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+ text-shadow: 1px 2px 4px lightblue;
+}
+/*Navigatiion*/
+#nav {
+  list-style: none;
+}
+.blue {
+  background-color: yellow;
+  color: darkblue;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  margin: 0 auto;
+}
+.red {
+  font-size: 3em; 
+  opacity:0; 
+  position: absolute;
+  top: 7%;
+  left: 60%;
+  margin: 0 auto;
+  z-index:-10;
+ }
+.blue:hover + .red {
+  opacity: 1;
+  position: absolute;
+  left: 200px; 
+  bottom: 200px;
+  margin: 0 auto;
+  z-index: -10;
+  color: #FFFFFF;
+  font-size: 4em;
+}
+/*Header*/
+#container {
+background-color: #000;
+  opacity: 0.75;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/*Animation*/
+#animation-container {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  position: relative;
+  z-index: 3;
+  top: 15.4em;
+}
+.perspective {
+	display: inline-flex;
+}
+.animate {
+  width: 275px;
+  height: 275px;
+  display: inline-flex;
+  -webkit-transform: perspective(1200px) rotateY(50deg) !important;
+    -moz-transform: perspective(1200px) rotateY(50deg) !important;
+    -ms-transform: perspective(1200px) rotateY(50deg) !important;
+    -o-transform: perspective(1200px) rotateY(50deg) !important;
+    transform: perspective(1200px) rotateY(50deg) !important;
+-webkit-transition-property: transform; 
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-property: transform; 
+  -moz-transition-duration: 0.5s;
+  -ms-transition-property: transform;  
+  -ms-transition-duration: 0.5s;
+ transition-property: transform;-transition-duration: 0.5s;
+ opacity: 1;
+ z-index: 10;
+}
+#project1 {
+  background-image: url(http://jlopezportfolio.altervista.org/index/graphics/hoverpage.png);
+  background-color: lightblue;  
+}
+#project2 {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/22018/screenshots/773304/jquery-stickers_1x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#project3 {
+  background-image: url(http://frenzyofnoise.net/wp-content/uploads/2014/05/Futuristic-Technologies.jpg);
+  background-size: cover;
+  background-color: limegreen;
+  z-index: 1;
+}
+#project1:hover  {
+  width: 450px;
+  height: 375px;
+  z-index: 10;
+  -webkit-transform: perspective(1200px) rotateY(0deg) !important;
+    -moz-transform: perspective(1200px) rotateY(0deg) !important;
+    -ms-transform: perspective(1200px) rotateY(0deg) !important;
+    -o-transform: perspective(1200px) rotateY(0deg) !important;
+    transform: perspective(1200px) rotateY(0deg) !important;
+	position: relative;
+	bottom: 7em;
+} 
+#project2:hover  {
+	position: relative;
+	bottom: 5em;
+  width: 450px;
+  height: 375px;
+  -webkit-transform: perspective(1200px) rotateY(0deg) !important;
+    -moz-transform: perspective(1200px) rotateY(0deg) !important;
+    -ms-transform: perspective(1200px) rotateY(0deg) !important;
+    -o-transform: perspective(1200px) rotateY(0deg) !important;
+    transform: perspective(1200px) rotateY(0deg) !important;
+  background-size: 500px 480px;
+  z-index: 10;
+}
+#project3:hover  {
+  width: 450px;
+  height: 375px;
+  -webkit-transform: perspective(1200px) rotateY(0deg) !important;
+    -moz-transform: perspective(1200px) rotateY(0deg) !important;
+    -ms-transform: perspective(1200px) rotateY(0deg) !important;
+    -o-transform: perspective(1200px) rotateY(0deg) !important;
+    transform: perspective(1200px) rotateY(0deg) !important;
+	position: relative;
+	bottom: 5em;
+	z-index: 10;
+}
+#background-style {
+	position: absolute;
+	top: 0;
+	right: 0.7em;
+	z-index: -2;	
+}
+/*Diamond Style Animation*/
+.stripe {
+  width: 240px;
+  height: 240px;
+  opacity: 0.20;
+  float: right; 
+  -ms-transform: rotate(45deg); 
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#stripe1 {
+  background-color: lightblue;
+}
+#stripe2 {
+  background-color: red;
+}
+#stripe3 {
+  background-color: limegreen;
+}
